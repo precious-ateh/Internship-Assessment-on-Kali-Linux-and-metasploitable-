@@ -1,0 +1,88 @@
+Name: Ateh Precious
+Track: Computer Networking and cyber security
+1. Title: SQL Injection Exploitation Report
+
+SQL Injection Exploitation on a Deliberately Vulnerable Web Application
+2. Introduction
+SQL Injection (SQL) is a web application vulnerability that occurs when user-supplied input is incorrectly included in an SQL query. An attacker may manipulate the SQL statement to bypass authentication or retrieve information from a database.
+This practical was performed in an authorized and controlled laboratory environment using a deliberately vulnerable web application. The purpose was to understand how SQL Injection works, demonstrate its impact, and identify methods for preventing the vulnerability.
+3. Objectives
+The objectives of this practical were to:
+* Identify a SQL Injection vulnerability
+* Demonstrate SQL Injection in the laboratory application.
+* Understand how the SQL query is manipulated.
+* Explain the security impact of SQL Injection.
+4. Tools and Environment
+Component
+
+description
+
+Operating System
+
+Kali Linux
+
+Target Application
+
+DVWA (deliberately vulnerable wed application)
+
+Database
+
+SQL/Mariadb
+
+Testing Environment
+
+Local virtual machine
+
+Browser
+
+Firefox
+
+Security Tool
+
+Injection testing
+
+
+ 
+5. Methodology
+
+The following general process was followed:
+1. Started the vulnerable web application.
+2. Opened the application through the web browser.
+3. Navigated to the SQL Injection section.
+4. Identified an input field that accepted user-supplied data.
+5. Entered controlled test input to determine whether the application was safely handling the input.
+6. SQL Injection Demonstration
+
+A SQL query used by a vulnerable application might look conceptually like:
+SELECT *FROM users
+WHERE username = ‘USER_INPUT’
+AND password = ‘PASSWORD_INPUT’;
+How the Vulnerability Works
+* Bypassing authentication.
+* Reading database records.
+* Modifying database information.
+* Deleting information.
+* Obtaining sensitive user data
+6. Impact
+
+SQL Injection can have a high security impact, depending on the privileges of the database account used by the application.
+* Unauthorized access to accounts.
+* Exposure of usernames and other sensitive information
+* Loss of confidentiality and integrity.
+* Potential compromise of other parts of the application.
+7. Vulnerability Identification
+
+• Vulnerability: SQL Injection
+• Location: Vulnerable application input/login field
+8. Recommended Remediation
+
+The vulnerability can be prevented by:
+1. Using prepared statements/parameterized queries instead of directly concatenating user input into SQL statements.
+2. Validating user input according to the expected data type and format.
+3. Using least-privilege database account
+4. Using secure coding practices during application development.
+6. Regularly testing applications for SQL Injection and other OWASP vulnerabilities.
+9. Conclusion
+
+The practical demonstrated how SQL Injection can occur when a web application improperly handles user input. By manipulating input in the deliberately vulnerable laboratory application, the intended SQL query can be altered, potentially resulting in authentication bypass or unauthorized database access.
+ 
