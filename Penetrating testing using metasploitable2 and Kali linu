@@ -1,0 +1,27 @@
+An unauthorized Vulnerability Assessment and Penetrating Testing Report
+Prepared By: Ateh Precious
+Track : computer Networking
+Name: [vulnerability discovered]
+Affected service
+Service: [e.g., FTP]
+Port: [e.g., 21/tcp]
+Version: [version discovered by Nmap]
+Evidence
+
+
+
+
+
+ 
+Impact
+
+Explain what an attacker could potentially gain from exploiting the vulnerability, such as unauthorized access or control of the vulnerable system.
+Remediation
+
+Recommend things such as:
+* Upgrade or replace vulnerable software.
+* Disable unnecessary services.
+* Restrict exposed ports with a firewall.
+* Use strong authentication.
+* Keep systems and services patched.
+* Monitor suspicious network activit
